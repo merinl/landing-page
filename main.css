@@ -7,4 +7,46 @@ body{
 }
 .container{
     height: 100vh;
+    /* margin: 0;
+    padding: 0; */
+}
+.header, .main, footer{
+    background-color: #1f2937;
+}
+.header .logo{
+    font-size: 24px;
+    color: #f9faf8;
+}
+.header ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.header a{
+    text-decoration: none;
+}
+.header a, .main p{
+    font-size: 18px;
+    color: #e5e7eb;
+}
+.info h3{
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+}
+.main h2{
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
+}
+.quotes{
+    background-color: #e5e7eb;
+}
+.quotes p{
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+}
+button{
+    background-color: #3882f6;
 }
