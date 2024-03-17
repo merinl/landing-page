@@ -5,15 +5,19 @@ body{
     font-family: sans-serif;
     line-height: 1.5;
 }
-.container{
-    height: 100vh;
-    /* margin: 0;
-    padding: 0; */
-}
-.header, .main, footer{
+.container-one, .container-five{
     background-color: #1f2937;
+
 }
-.header .logo{
+.container-three{
+    background-color: #e5e7eb;
+
+}
+.header, footer{
+        margin: 0 auto;
+        width: 80%;    
+}
+.header .logo {
     font-size: 24px;
     color: #f9faf8;
 }
@@ -24,8 +28,10 @@ body{
 }
 .header a{
     text-decoration: none;
+    padding: 5px 10px;
+
 }
-.header a, .main p{
+.logo-links a, .main p{
     font-size: 18px;
     color: #e5e7eb;
 }
@@ -39,9 +45,7 @@ body{
     font-weight: bolder;
     color: #f9faf8;
 }
-.quotes{
-    background-color: #e5e7eb;
-}
+
 .quotes p{
     font-size: 36px;
     font-style: italic;
@@ -49,4 +53,130 @@ body{
 }
 button{
     background-color: #3882f6;
+}
+/* global */
+button{
+    border: none;
+    padding: 10px 30px;
+    color: #f9faf8;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* header  */
+.header{
+padding: 20px 0;
+}
+
+/* logo and links */
+.logo-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-links ul{
+    display: flex;
+    gap: 20px;
+}
+
+/* main */
+.main{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+.main img, .main .text-btn{
+    max-width: 400px;
+    min-height: 200px;
+}
+.main h2{
+margin-bottom: 0;
+}
+.main p{
+    margin-top: 0;
+}
+
+/* info */
+/* .container-two{
+    background-color: #e5e7eb;
+    
+} */
+.info{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card{
+    width: 150px;
+    height: 150px;
+    border: 5px solid #3882f6 ;
+    border-radius: 10px;
+
+}
+.cards-texts{
+    display: flex;
+    gap: 30px;
+}
+.card-text{
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 20%;
+}
+.card-text p{
+    text-align: center;
+}
+
+/* quotes */
+
+.quotes{
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.quotes p{
+    margin-bottom: 0;
+}
+.quotes h4{
+align-self: flex-end;
+margin-top: 0;
+}
+
+/* signup */
+.signup{
+    background: #3882f6 ;
+    color: #f9faf8;
+    width: 80%;
+    margin: 80px auto;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 120px;
+}
+.signup button{
+    border: 2px solid white;
+}
+
+/* footer */
+footer{
+    height: 70px;
+    color: #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* hover */
+.header a:hover{
+    border-bottom: 2px solid white;
+    box-shadow: 2px 2px 2px white;
 }
